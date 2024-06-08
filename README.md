@@ -1,6 +1,6 @@
 # .dotfiles
 
-This repository contains my personal terminal configuration files including the Powerlevel10k theme for Zsh.
+This repository contains my personal terminal configuration files including the Powerlevel10k theme for Zsh, along with global Git configuration and ignore files.
 
 ## Getting Started
 
@@ -11,6 +11,7 @@ These instructions will help you set up your terminal with my configuration.
 - **Zsh**: Ensure you have Zsh installed.
 - **Oh My Zsh**: Install Oh My Zsh if you haven't already.
 - **Powerlevel10k**: Install the Powerlevel10k theme.
+- **Git**: Ensure you have Git installed.
 
 ### Installation
 
@@ -23,11 +24,13 @@ These instructions will help you set up your terminal with my configuration.
 
 2. **Backup Existing Configuration**
 
-   If you have existing `.zshrc` or `.p10k.zsh` files, make sure to back them up:
+   If you have existing `.zshrc`, `.p10k.zsh`, `.gitconfig`, or `.gitignore_global` files, make sure to back them up:
 
    ```bash
    mv ~/.zshrc ~/.zshrc.backup
    mv ~/.p10k.zsh ~/.p10k.zsh.backup
+   mv ~/.gitconfig ~/.gitconfig.backup
+   mv ~/.gitignore_global ~/.gitignore_global.backup
    ```
 
 3. **Run the Setup Script**
