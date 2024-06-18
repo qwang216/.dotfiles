@@ -9,8 +9,6 @@ These instructions will help you set up your terminal with my configuration.
 ### Prerequisites
 
 - **Zsh**: Ensure you have Zsh installed.
-- **Oh My Zsh**: Install Oh My Zsh if you haven't already.
-- **Powerlevel10k**: Install the Powerlevel10k theme.
 - **Git**: Ensure you have Git installed.
 
 ### Installation
@@ -40,6 +38,16 @@ These instructions will help you set up your terminal with my configuration.
    ```bash
    ./setup.sh
    ```
+
+### Updating the Brewfile
+
+If you install new packages and want to update the Brewfile with your current Homebrew setup, use the following command:
+
+   ```bash
+   brew bundle dump --file=Brewfile --force
+   ```
+
+This will overwrite the existing Brewfile with a new one that contains all the currently installed Homebrew packages.
 
 ## Contributing
 
