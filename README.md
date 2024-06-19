@@ -33,7 +33,17 @@ These instructions will help you set up your terminal with my configuration.
 
 3. **Run the Setup Script**
 
-   The `setup.sh` script will create symlinks for the configuration files:
+   The `setup.sh` script will:
+   - Install Homebrew if it's not already installed.
+   - Install packages listed in the Brewfile.
+   - Install Oh My Zsh and Powerlevel10k if they are not already installed.
+   - Configure Xcode settings for optimal performance and customization.
+   - Apply various macOS system preferences, such as showing hidden files in Finder and saving screenshots to a specific location.
+   - Clear and configure the Dock with essential applications and folders.
+   - Create symbolic links for your dotfiles.
+   - Source the `.zshrc` file to apply changes immediately.
+
+   To run the script, use:
 
    ```bash
    ./setup.sh
