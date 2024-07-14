@@ -109,3 +109,15 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# For zsh auto suggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+setup() {
+  local prev_dir=$(pwd)  # Store current directory
+
+  cd ~/.dotfiles
+  ./setup.sh
+
+  cd "$prev_dir"  # Return to the original directory
+}
