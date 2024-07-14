@@ -18,6 +18,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 if ! command -v brew &> /dev/null; then
   echo "Homebrew not found. Installing Homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/jasonwang/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 else
   echo "Homebrew is already installed"
 fi
