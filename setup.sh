@@ -155,7 +155,7 @@ create_symlink "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
 create_symlink "$HOME/.dotfiles/.p10k.zsh" "$HOME/.p10k.zsh"
 create_symlink "$HOME/.dotfiles/.gitignore_global" "$HOME/.gitignore_global"
 create_symlink "$HOME/.dotfiles/.gitconfig" "$HOME/.gitconfig"
-create_symlink "$HOME/.dotfiles/.config" "$HOME/.config"
+# create_symlink "$HOME/.dotfiles/.config" "$HOME/.config"
 
 ###############################################################################
 # Kill affected applications                                                  #
