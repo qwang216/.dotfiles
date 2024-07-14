@@ -1,8 +1,8 @@
 [user]
-	name = Jimmy Sambuo
-	email = jsambuo+github@gmail.com
+	name = Jason Wang
+	email = qwang216@gmail.com
 [core]
-	excludesfile = /Users/jimmy/.gitignore_global
+	excludesfile = /Users/jasonwang/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -10,7 +10,7 @@
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
-	template = /Users/jimmy/.stCommitMsg
+	template = /Users/jasonwang/.stCommitMsg
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
